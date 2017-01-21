@@ -22,9 +22,6 @@ buffer_score([_ | Moves]) ->
   {A, B, C} = buffer_score(Moves),
   {A + 1, B, C + 1}.
 
-%%buffer_sorted_insert([], Item) -> [Item];
-%%buffer_sorted_insert(List, Item) -> [Item | List].
-
 buffer_sorted_insert([], Item) ->
   [Item];
 buffer_sorted_insert([First | Rest], Item) ->
